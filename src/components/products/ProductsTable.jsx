@@ -16,7 +16,11 @@ const ProductsTable = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2 }}
-    ></motion.div>
+    >
+      <div className="flex justify-between items-center mb-6">
+        
+      </div>
+    </motion.div>
   )
 }
 
