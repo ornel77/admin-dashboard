@@ -48,7 +48,7 @@ const UsersTable = () => {
     const term = e.target.value.toLowerCase();
     setSearchTerm(term);
     const filtered = USER_DATA.filter((user) =>
-      user.name.toLowerCase().includes(term)
+      user.name.toLowerCase().includes(term) || user.email.toLowerCase().includes(term)
     );
     setFilteredUsers(filtered);
   };
